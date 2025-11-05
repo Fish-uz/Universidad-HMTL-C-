@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ PARTE IV</title>
+    <link rel="stylesheet" href="CSS/styleP4.css"> <!--Hoja de Estilos CSS -->
+    <link rel="shortcut icon" href="imagenes/icono_web.png"> <!--Icono para pestaña de la pagina-->
+</head>
+    
+<body background="imagenes/Fondo_pantala.jpg"> <!--Imagen de fondo -->
+    <div class="padre">
+        <header class="header">
+            <div class="menu">
+                <div class="logo">
+                    <a href="#"><img src="imagenes/Logo_c++_sinfondo.png" alt="imagen" width="120" height="118"></a> <!-- Logotipo de C++ -->
+                </div>
+                <nav class="nav"> <!--NAVEGACION ENTRE PAGINAS-->
+                    <a href="Portada.html">Portada</a>
+                    <a href="Parte 1.html">Parte I</a>
+                    <a href="Parte 2.html">Parte II</a>
+                    <a href="Parte 3.html">Parte III</a>
+                    <a href="Parte 4.html">Parte IV</a>
+                    <a href="#">Parte V</a>
+                </nav>
+                <div class="social">
+                    <a target="_blank" a href="http://www.unexca.edu.ve/"><img src="imagenes/LOGO_unexca.jpeg" alt="social" width="150" height="112"></a> <!--Logotipo y link de la universidad -->
+                </div>     
+            </div>
+                <div class="texto-principal">
+                    <h1>PARTE V -  ARRAYS</h1> <!--Titulo Principal del Tema -->
+                </div> 
+        </header>
+                <section class="section">
+                    <div class="articulos">
+                        <article class="article">
+                        <ol>
+                            <h3>
+                                    <!--Primer Concepto-->
+                                    <li><h2 style="text-decoration: underline;">ARRAYS Y CADENAS</h2></li>
+                                    <p>Los arrays son variables estructuradas, donde cada elemento se almacena de forma consecutiva 
+                                        en memoria. Las cadenas de caracteres son declaradas en C como arrays de caracteres 
+                                        y permiten la utilización de un cierto número de notaciones y de funciones especiales.
+                                    
+                                    <li><h2 style="text-decoration: underline;">ARRAY UNIDIMENSIONALES</h2></li>
+                                    <P>Un array unidimensional es una lista de valores guardados bajo el mismo nombre y del mismo tipo. 
+                                        Cada valor dentro del array se le conoce como elemento del arreglo. <br>
+                                        Para declarar un array unidimensional en C++ se utiliza la siguiente línea de código: <br>
+
+                                       <br>tipo_dato identificador[tamaño];</P>
+
+                                       <P>En “tipo de dato” introduciremos que tipo de dato queremos (int, char, float.. etc) , luego en “identificador” introducimos 
+                                        como llamaremos a nuestro arreglo para ubicarlo e identificarlo de manera rápida. Y entre los corchetes 
+                                        colocaremos el tamaño que le demos a nuestro array. 
+                                        Quedando de esta manera:</P>
+                                        <h3>Ejemplo:</h3>int arreglo[3];<br>
+                                            
+                                            <h3>Declaración de un Array unidimensional o Vector en C++:</h3>
+                                        
+                                    
+                                            int my_vector1[10];<br>
+                                            float my_vector2[25];<br>
+                                            string my_vector3[500];<br>
+                                            char my_vector5[2];
+                                            </p>
+                                            <h3>Ejemplo de codigo</h3>
+                                             <Img src="imagenes/PARTE V IMAGEN 1.PNG" ></Img>
+                                       
+                                             <li><h2 style="text-decoration: underline;">ARRAY BIDIMENCIONALES (MATRICES)</h2></li>
+                                            <P> Es una matriz de datos de tamaño m x n que contiene información almacenada del mismo tipo de datos 
+                                                (int, float, char, etc). Este tipo de arreglos necesita dos subíndices para ser declarado o para acceder 
+                                                a la información de un elemento en específico, a diferencia de una matriz unidimensional que solo necesita un 
+                                                subíndice. Un arreglo bidimensional es utilizado cuando queremos guardar mucha información sobre un tipo de dato en específico en distintas filas. 
+                                            </P>
+                                            
+                                            Por ejemplo, si quieres crear una base de datos donde queremos guardar varios nombres, en un vector no se podría hacer pues solo 
+                                            podrías guardar un nombre, en cambio, con un arreglo bidimensional puedes guardar un nombre por fila, por lo tanto, si creamos varias 
+                                            filas podemos guardar varios nombres.
+                                            <H3>Código:
+                                            </H3>tipo_dato nombre_Array [tamaño_fila][tamaño_columna];
+
+                                        <ul>
+                                            <li> tipo_dato: Nos referimos al tipo de dato que estaremos manejando en el arreglo, puede ser char, int, float, etc.</li>
+                                             <li>   nombre_arreglo: El nombre con el que identificaremos nuestra matriz.</li>
+                                             <li> tamaño_fila: La cantidad de filas que tendrá nuestra matriz.</li>
+                                             <li> tamaño_columna: La cantidad de columnas que tendrá nuestra matriz.</li>
+                                                Por ejemplo, si queremos crear una matriz de 3 filas y 4 columnas de tipo de dato int y con nombre “matriz”, lo haríamos de la siguiente manera:</ul>
+                                                
+                                                <h3>Ejemplo de Codigo y declaración:</h3>
+                                                int matriz[3][4]; <br>
+                                                <H3>Esta matriz tendría 12 espacios para guardar información (3x4), y gráficamente lo veríamos de la siguiente manera:</H3><BR>                         
+                                            <img src="imagenes/PARTE V MATRIZ .JPG"> <!--Imagen de ejemplo del tema-->
+
+                                            <H3>Inicialización de un arreglo bidimensional: Podemos inicializar un arreglo bidimensional al momento de declararlo, indicando los valores que queremos entre corchetes y separados por coma, por ejemplo:
+                                                <P>Código:
+                                               int matriz[4][5] = {1,2,3,4,5,6,7,8,9,10,11,12};
+                                                Y gráficamente los valores estarían guardados de la siguiente manera:</H3>
+                                                
+                                            <img src="imagenes/PARTE V MATRIZ 2 JPG.jpg"></Img>
+                                            
+                                            <li><h2 style="text-decoration: underline;">ARRAY TRIDIMENSIONALES Y MULTIDIMENSIONALES</h2></li>
+                                                <p>Un array tridimensional es una estructura de datos que tiene tres dimensiones: 
+                                                    ancho, alto y profundidad. Puedes imaginarlo como una colección de matrices 
+                                                    apiladas una encima de la otra, donde cada celda en la matriz contiene una 
+                                                    tercera dimensión de datos. Puedes acceder a los elementos utilizando tres índices (i, j, k), donde i representa la coordenada en el ancho, j en el alto y k en la profundidad.
+                                                    <h3>Ejemplo en código (en pseudo-código):</h3>
+                                                    Definir array_tridimensional[3][3][3],
+                                                    // Asignar valores a elementos <BR>
+                                                     array_tridimensional[0][0][0] = 1 
+                                                    <BR>array_tridimensional[1][2][1] = 5 <BR>
+                                                    // Acceder a elementos, valor = array_tridimensional[0][0][0], // valor contendrá 1
+                                                    <H3>Arrays Multidimensionales:</H3> Los arrays multidimensionales generalizan el concepto de arrays tridimensionales al permitir que los datos se almacenen en más de tres dimensiones. Pueden tener cualquier número de índices, y cada índice representa una dimensión adicional.
+                                                    <h3>Ejemplo en código (en pseudo-código):</H3> <BR>
+
+
+                                                    Definir array_multidimensional[2][3][4][5],// Asignar valores a elementos <BR>
+                                                    array_multidimensional[0][1][2][3] = 42 <BR>
+                                                    array_multidimensional[1][2][1][0] = 10   ,// Acceder a elementos <BR>
+                                                    valor = array_multidimensional[0][1][2][3] // valor contendrá 42 <BR>
+                                                    <H3>Ejemplo Multidimensional:</H3>
+                                                    <img src="imagenes/PARTE V TRIDIMENSIONAL .jpg">
+                                                    <H3>Ejemplo Tridimensional:</H3>
+                                                    <img src="imagenes/PARTE V MULTIDIMENSIONAL.jpg">
+
+                                                    <li><h2 style="text-decoration: underline;">ASIGNACIÓN DE VALORES</h2></li>
+                                                        <p>La asignación de valores es la operación que permite darle un valor a una variable o modificar el valor que ya tiene. 
+                                                            En C++, se puede hacer una asignación simple usando el operador = o una asignación compuesta usando un operador que 
+                                                            combina una operación aritmética, de desplazamiento o bit a bit con la asignación. <br>Por ejemplo:</p>
+
+                                                            <img src="imagenes/asignacion_de_valores_img1.jpg" alt="asignacion_de_valores_img1">
+
+                                                    <li><h2 style="text-decoration: underline;">PASO DE ARGUMENTOS DE TIPO ARRAYS</h2></li>
+                                                        <p>El paso de argumentos de tipo arrays en C++ se hace por referencia, es decir, se pasa la dirección de memoria del primer elemento del array, 
+                                                                no los valores de los elementos. Esto permite modificar el array dentro de la función si se desea. <br>Por ejemplo:</p>
+
+                                                                <img src="imagenes/argumentos_array_img1.jpg" alt="Argumentos de un array">
+                                                            
+                                                    <li><h2 style="text-decoration: underline;">ARREGLOS MULTIDIMENSIONALES</h2></li>
+                                                        <p>Un arreglo multidimensional en C++ es un arreglo cuyos elementos son a su vez arreglos. Se pueden definir arreglos de dos o más dimensiones, 
+                                                                usando corchetes para indicar el tamaño de cada dimensión. <br>Por ejemplo, para declarar un arreglo bidimensional de 3 filas y 4 columnas de enteros, se puede hacer así:</p>
+                                                                
+                                                            <img src="imagenes/arreglos_multidimensional_img1.jpg" alt="">
+
+                                                        <p>Para acceder a un elemento de un arreglo multidimensional, se usan los índices correspondientes a cada dimensión, separados por corchetes. 
+                                                            <br>Por ejemplo, para asignar el valor 10 al elemento de la segunda fila y la tercera columna de la matriz anterior, se puede hacer así:</p>
+                                                                
+                                                            <img src="imagenes/arreglos_multidimensional_img2.jpg" alt="">
+
+                                                        <p>Los arreglos multidimensionales se pueden inicializar al momento de declararlos, usando llaves para agrupar los valores de cada dimensión. 
+                                                            <br>Por ejemplo:</p>
+
+                                                            <img src="imagenes/arreglos_multidimensional_img3.jpg" alt="">
+
+                                                        <p>Los arreglos multidimensionales se pueden pasar como argumentos a funciones, pero se debe especificar el tamaño de todas las dimensiones excepto la primera. 
+                                                            <br>Por ejemplo:</p>
+
+                                                            <img src="imagenes/arreglos_multidimensional_img4.jpg" alt="">
+                                                            
+                                                    <li><h2 style="text-decoration: underline;">ARRAY DE TIPO CADENA (STRING)</h2></li>
+                                                        <p>Un array de tipo cadena (string) en C++ es un array cuyos elementos son objetos de la clase string, que representa una secuencia de caracteres. 
+                                                                    Se pueden crear arrays de tipo string usando el contenedor std::array, la notación string arr[] o la notación char arr[][]. <br>Por ejemplo:</p>
+                                                                    
+                                                            <img src="imagenes/ARRAY_DE_TIPO_CADENA_(STRING).jpg" alt="">
+                                                    
+                                                    <li><h2 style="text-decoration: underline;">ITERACIONES EN ARRAY UNIDIMENSIONALES, ARRAY BIDIMENCIONALES (MATRICES),ARRAY TRIDIMENSIONALES Y MULTIDIMENSIONALES.</h2></li>
+
+                                                <ol type="A">
+                                                    <li><h3>ITERACIONES EN ARRAY UNIDIMENSIONALES</h3></li>
+                                                    <p>Una iteración en un array unidimensional en C++ es un proceso que recorre todos los elementos del array, usando un índice o un iterador, 
+                                                        y realiza alguna acción sobre ellos. Se pueden usar diferentes estructuras de control para iterar sobre un array, como for, while o do-while. <br>Por ejemplo:</p>
+
+                                                        <img src="imagenes/ITERACIONES_EN_ARRAY_UNIDIMENSIONALES.jpg" alt="">
+                                                    
+                                                    <li><h3>ITERACIONES ARRAY BIDIMENCIONALES (MATRICES)</h3></li>
+                                                    <p>Un array bidimensional (matriz) en C++ es un array cuyos elementos son otros arrays de una dimensión, que representan filas o columnas de valores. Se pueden crear arrays bidimensionales 
+                                                        usando la notación tipo arr[f][c], donde f es el número de filas y c el número de columnas. <br>Por ejemplo:</p>
+
+                                                        <img src="imagenes/ARRAY_BIDIMENCIONALES_(MATRICES).jpg" alt="">
+
+                                                    <li><h3>ITERACIONES ARRAY TRIDIMENSIONALES</h3></li>
+                                                    <p>Un array tridimensional es un array que contiene arrays de dos dimensiones como elementos. Cada elemento es una matriz, lo que permite crear una estructura de datos en forma de cubo o prisma. 
+                                                        Se pueden crear arrays tridimensionales usando la notación tipo arr[x][y][z], donde x es el número de capas, y e y son el número de filas y columnas de cada capa. <br>Por ejemplo:</p>
+
+                                                        <img src="imagenes/ARRAY_TRIDIMENSIONALES.jpg" alt="">
+
+                                                    <li><h3>ITERACIONES ARRAY MULTIDIMENSIONALES</h3></li>
+                                                    <p>Un array multidimensional es un array que contiene arrays de más de una dimensión como elementos. Cada elemento es una matriz, lo que permite crear una estructura de datos con varias dimensiones. 
+                                                        Se pueden crear arrays multidimensionales usando la notación tipo arr[d1][d2]…[dn], donde d1, d2, …, dn son el número de elementos en cada dimensión. <br>Por ejemplo:</p>
+
+                                                        <img src="imagenes/ARRAY_MULTIDIMENSIONALES.jpg" alt="">
+                                                </ol>
+                                                                    
+                                            </ol>       
+                                    
+                                            <!--REFERENCIAS BIBLIOGRAFICAS O ELECTRONICAS-->
+                                            <nav  id="referencias">
+                                                <h4 style="text-decoration: underline;">REFERENCIAS Electrónicas</h4>
+                                                <h5>
+                                                <p class="referencia">https://yosoy.dev/arreglos-unidimensionales-en-c/</p>
+                                                <p class="referencia">https://www.programarya.com/Cursos/C++/Estructuras-de-Datos/Arreglos-o-Vectores</p>
+                                                <p class="referencia">http://solucioningenieril.com/programacion_en_c/arreglos_bidimensionales_matrices_o_tablas</p>
+                                                <p class="referencia">https://www.programarya.com/Cursos/C++/Sistema-de-Tipos/Variables-y-Constantes#:~:text=Para%20asignar%20valores%20a%20una,%22%3D%22%20para%20esto).</p>
+                                                <p class="referencia">https://desarrolloweb.com/articulos/632.php</p>
+                                                <p class="referencia">https://www.aulafacil.com/cursos/programacion/java-basico/arrays-multidimensionales-l13535</p>
+                                                <p class="referencia">https://learn.microsoft.com/es-es/dotnet/csharp/programming-guide/arrays/multidimensional-arrays</p>
+                                            </h5>
+                                            </nav>   
+                            </h3>   
+                        </article>
+                    </div>      
+                </section>
+                <footer class="footer"> <!--Cuadros Informativos -->
+                    <nav class="pie">
+                    <div class="estudiantes"> <!--Informacion de los integrantes -->
+                        <p>Desarrollado por:
+                            <br>Frank Uzcategui C.I.:24.898.152
+                            <br>Jesus Velazquez C.I.:25.038.447
+                            <br>Cesar Monagas   C.I.:19.819.308
+                            <br>Ketty Perez     C.I.:16.014.231
+                        </p>
+                    </div>
+                    <div class="instituto"> <!--Informacion de la Universidad -->
+                        <p>Universidad Experimental de la Gran Caracas
+                        <br>Mencion: Informatica
+                        <br>Seccion: 30511
+                        </p>
+                    </div>
+                    <div class="profesor"> <!--Informacion de la Materia y El profesor -->
+                        <p>Profesor: Luis Marchena
+                        <br>Materia: Algoritmo y Programacion
+                        </p>
+                    </div>
+                    </nav>
+                </footer>
+    </div>
+</body>
+</html>

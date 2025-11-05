@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <title>FlexiWeb-Repl</title>
+    <link rel="stylesheet" href="index_replic.css">
+    <link rel= "shortcut icon"  href="img/Logo_Frank.jpg"> <!--Icono de pestaña de la pagina-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="padre">
+        <section class="section"><section>
+        <div class="articulos" >
+            <article class="article" id="izquierda"> <!--BOX IZQUIERDO-->
+                <h1>ACTIVA FLEXIPOS/WEB</h1>
+                <p>Cuidemos el planeta. No malgaste papel o pierda tiempo buscando su información.</p>
+                    <p>Si Ud. posee un punto de venta Flexipos® de cualquier modelo, y aún no dispone de usuario en la plataforma Flexipos/Web, 
+                    no espere más y regístrese con su equipo ahora para tener acceso.</p>
+                    
+                    <p>Flexipos/Web es un servicio que ofrecemos gratuitamente a todos los usuarios de nuestros dispositivos con la finalidad de darle 
+                    acceso digital a la información que generan, reducir el consumo de papel y ofrecer valor agregado de nuestros productos.</p>
+                    
+                    <h3>Registre su equipo aquí y comience a disfrutar ya de la experiencia Flexipos.</h3>
+                    <button>ACTIVAR MI USUARIO</button>
+            </article>
+            <article class="article" id="derecha"> <!--BOX DERECHO-->
+                <h1 id="derecha"><img src="img/logo_bienvenida.png" alt="Flexipos" width="350" height="80"></h1>
+                <h3>Bienvenido a Flexipos/Web™</h3>
+                <p id="p1">Ingrese su usuario</p>
+                <input type="text" placeholder="Usuario" id="usuario">
+                <br>
+                <input type="text" placeholder="Contraseña" id="usuario">
+
+                <!--Recaptcha VISUAL-->
+                <style id="style">
+                    .recaptcha {
+                      width: 300px;
+                      height: 78px;
+                      background-color: #ffffff;
+                      border: 1px solid #c1c1c1;
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      padding: 10px;
+                    }
+                  
+                    .recaptcha-text {
+                      font-family: Arial, sans-serif;
+                      font-size: 14px;
+                      color: #757575;
+                      display: flex;
+                      align-items: center;
+                    }
+                  
+                    .recaptcha-logo {
+                      width: 40px;
+                      height: 40px;
+                      background-image: url("https://www.gstatic.com/recaptcha/api2/logo_48.png");
+                      background-size: cover;
+                    }
+                  
+                    .checkbox {
+                      display: flex;
+                      align-items: center;
+                    }
+                  
+                    .checkbox-label {
+                      font-family: Arial, sans-serif;
+                      font-size: 9px;
+                      color: #757575;
+                      margin-left: 2px;
+                    }
+                  
+                    .info-icon {
+                      width: 16px;
+                      height: 16px;
+                      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABrklEQVQ4jY2TTUhUURTHf+fy/HrjhNEX2KRGiyIXg8xgSURuokXLxFW0qDTaSQupkHirthK0qF0WQQQR0UCbwCJBY7OIxO9x5+4ee3e4OJcLj8fjvDfv933f93nfe0JrLatgRZz3BvgZLJfLXo2O1+sVjuM4juM4juM4juM4juM4juM4juM4juM4juM4juM4juM4juM4juN4X+ACXq/XUavVUCwWm7dUKsFutwvxeBylUgmTyYTD4YDL5YLP54PFYkGtVkOtVkOtVkOtVkOtVkOtVkOtVkOtVkOtVkPnfwGw2WzQarXQarUQj8dRr9dRLpdRLpdRLpdRLpdRLpdRLpdRLpdRLpfL/gGXy2XcbjeEQiGEQiGEQiGEQiGEQiGEQiGEQiGEQiGEQiGEQiGEw+F/AuFwGK1WC6FQCGKxGGKxGGKxGGKxGGKxGGKxGGKxGGKxGGKxGGKxGACtVguNRgOlUgmlUglutxulUglutxulUglutxulUglutxulUglutxulUglutxv+B3gcrkMn8+Hw+GAw+GAw+GAw+GAw+GAw+GAw+GAw+GAw+GAw+EAvV6PZrOJZrOJZrOJZrOJZrOJZrOJZrOJZrOJZrOJZrPJ/gD/B7PZDIfDAPC5XIhGo4hGo4hGo4hGo4hGo4hGo4hGo4hGo4hGo7E/AO12G11XV/S9jUYDjUYDjUYDjUYDjUYDjUYDjUYDjUYDvd8H/wDee++9Fw6HAwAAAABJRU5ErkJggg==");
+                      background-size: cover;
+                      cursor: pointer;
+                    }
+                  </style>
+                  
+                  <div class="recaptcha">
+                    <div class="recaptcha-text">
+                      <div class="recaptcha-logo"></div>
+                      <span>reCAPTCHA</span>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="robot" name="robot" value="robot">
+                      <label for="robot" class="checkbox-label">No soy un robot</label>
+                      <div class="info-icon" title="reCAPTCHA es un servicio que protege tu sitio web del spam y el abuso."></div>
+                    </div>
+                  </div>
+                 <!--Recaptcha VISUAL-->
+                 <button type="button">Entrar</button>
+                 <div class="pie">
+                 <a href="#">Olvido su Usuario</a>
+                 <a href="#">Olvido su Contraseña</a>
+                </div>
+                <footer>
+                    Copyright ©2023 Flexipos® Frank. <br>
+                    All Rights Reserved. | Version 14.08.2923<br>
+                    Developed by Flexipos Corp. 2023 www.flexipos.us<br>
+                </footer>
+            </article>
+        </section>
+        </div>
+    </div>
+</body>
+</html>
