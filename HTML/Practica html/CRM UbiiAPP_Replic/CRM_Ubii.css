@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+body{  
+    background: gainsboro;
+}
+.padre{
+    flex: auto;
+    background: red;
+    flex-flow: column nowrap;
+}
+.header{
+    display: flex;
+    flex-flow: column nowrap;
+    background: blue;
+}
+.box1{
+    display: flex;
+}
+.buscar{
+    display: 1 1 auto;
+}
+.box-buscador{
+    flex: 1 1 5;
+    border: white;
+    flex-flow: column nowrap;
+}
+.usuario{
+    flex: 1 1 5;
+    display: flex;
+    margin-left: 70%;
+}
